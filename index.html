@@ -5,263 +5,323 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/df2e8ea48d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <!----------Home Section---------->
 <div id="header">
-
+<div class="container">
     <!--Navigation Bar-->
-    <nav class="navbar">
+    <nav >
+        <img src="images/Logo.png" >
+
         <ul>
             <li>
                 <a href="#">Home</a>
-                 <a href="#">About Me</a>  <!-- intrests, education, skills, cv ,languages -->
+                <a href="#">About Me</a>  <!-- intrests, education, skills, cv ,languages -->
                 <a href="#">Services </a>
                 <a href="#">Projects</a>
                 <a href="#">Contact Me</a>
             </li>
         </ul>
+
+        
     </nav>
     <div>
-        <img src="images/Image40.png">
+        <!-- <img src="images/Image40.png"> -->
     </div>
 
 
     <div class="hometext">
-        <p>Web Developer | Database Adminstrator | Records Manager | Data Entry Specialist</p>
+        <p>Web Developer | <br> Database Adminstrator | <br> Records Manager |<br> Data Entry Specialist</p>
         <h1>Sandra Wandera </h1>
         <h3>Nairobi, Kenya</h3>
     </div>
 </div>
+    
+</div>
 
 <!-------------About section------------->
-<div class="about">
-
-    <h1>About Me</h1>
-
-    <div>
-        <h2>Skills</h2>
+<div class="aboutsection">
+    <h1 class="sectionhead">About Me</h1>
+    <div class="about">
+        <div class="row">
+            <h2>Skills</h2>
         
-        <ul>
-            <li>Web Development</li>
-            <li>Data Administration</li>
-            <li>Data Entry</li>
-            <li>Digital Records Management</li>
-        </ul>
-    </div>
+            <ul>
+                <li>Web Development</li>
+                <li>Data Administration</li>
+                <li>Data Entry</li>
+                <li>Digital Records Management</li>
+            </ul>
+        </div>
 
-    <div>
-        <h2>Languages</h2>
-        
-         <ul>
-            <li>Python</li>
-            <li>Javasript</li>
-            <li>MySql</li>
-            <li>HTML CSS</li>
-         </ul>
-    </div>
+        <div class="row">
+            <h2>Languages</h2>
+            
+            <ul>
+                <li>Python</li>
+                <li>MySql</li>
+                <li>HTML CSS</li>
+            </ul>
+        </div>
 
-    <div>
-        <h2>Education</h2>
+        <div class="row">
+            <h2>Education</h2>
 
-        <p><span>2025</span><br>software Engineering at Power Learn Project</p>
-        <p><span>2022</span><br> Information Science (Records Management & Data adminstration) at Kenya Methodist University</p>
-        <p><span>2021</span> <br> Advanced Excel </p>
+            <p><span>2025</span><br>software Engineering at Power Learn Project</p>
+            <p><span>2022</span><br> Information Science (Records Management & Data adminstration) at Kenya Methodist University</p>
+            <p><span>2021</span> <br> Advanced Excel </p>
 
-    </div>
+        </div>
 
-    <div>
-        <h2>Intrests</h2>
-        <ul>
-            <li>Passionate about creating dynamic websites and optimizing web applications
-                using technologies like HTML, CSS, Javasript and Node.js.
-            </li>
-            <li>Interested in efficient data management, focusing on 
-                database optimization, data security and automation.
-            </li>
-            <li>Passionate about learning new languages and technologies
-                 to stay ahead in the evolving tech landscape.
-            </li>
-            <li><span>Fun Fact</span>
-                I once built a website just for fun, using only HTML, CSS and JavaScript,
-                 and ended up teaching myself a lot about web development in the process. 
-                 That project sparked my passion for creating efficient, user-friendly 
-                 websites!
-            </li>
-        </ul>
+        <div class="row">
+            <h2>Intrests</h2>
+            <ul>
+                <li>Passionate about creating dynamic websites and optimizing web applications
+                    using technologies like HTML, CSS, Javasript and Node.js.
+                </li>
+                <li>Interested in efficient data management, focusing on 
+                    database optimization, data security and automation.
+                </li>
+                <li>Passionate about learning new languages and technologies
+                    to stay ahead in the evolving tech landscape.
+                </li>
+                <li><strong  style="text-decoration: underline">Fun Fact</strong> <br>
+                    I once built a website just for fun, using only HTML, CSS and JavaScript,
+                    and ended up teaching myself a lot about web development in the process. 
+                    That project sparked my passion for creating efficient, user-friendly 
+                    websites!
+                </li>
+            </ul>
 
     </div>
 
 </div>
+
+
     
 <!---------Services Section------------>
-<div class="services">
+<div id="services">
+    <div class="servicessection">
 
-    <h1>Services Offered</h1>
-
-    <div>
-        <h2>Data Entry Specialist</h2>
-        <p>I specialize in ensuring the accurate and efficient entry,
-             processing and management of data for various industries. 
-             With a keen eye for detail, I focus on maintaining data
-             integrity, organizing information, and delivering timely
-             results. My expertise covers high-volume data processing,
-             database management and creating automated workflows to 
-             improve efficiency.
-            </p>
-        <ul>
-            <li>Accurate Data Entry (inputting large volumes of data with precision and speed.)</li>
-            <li>Data Cleaning & Validation (ensuring data consistency and accuracy.)</li>
-            <li>Database Management (organizing and maintaining records in digital databases.)</li>
-            <li>Document Scanning & Digitization (converting physical records to digital formats.)</li>
-            <li>Data Processing & Reporting (analyzing and reporting on data trends.)</li>
-            <li>Automation of Repetitive Tasks (using tools to streamline data entry processes.)</li>
-            <li>Confidentiality & Data Security (maintaining confidentiality and secure handling of sensitive data.)</li>
-        </ul>
-    </div>
+        <h1>Services Offered</h1>
     
-
-    <div>
-        <h2>Web Development</h2>
-        <p>I provide professional web development solutions to create fast,
-            functional and visually appealing websites that align with
-            your business goals.
-        </p>
-        <ul>
-            <li>Website Planning & Strategy</li>
-            <li>Custom Web Design & Development</li>
-            <li>Mobile Optimization</li>
-            <li>SEO & Performance Enhancement</li>
-            <li>E-commerce Solutions</li>
-            <li>CMS Integration</li>
-            <li>Ongoing Support & Maintenance</li>
-          </ul>
-
-    </div>
-
-
-
-    <div>
-        <h2>Data Adminstration</h2>
-        <p>As a Data Administrator, I specialize in managing, securing
-            and optimizing databases to ensure seamless data storage,
-            access and integrity.
-        </p>
-        <ul>
-            <li> Database Design & Management</li>
-            <li> Data Security & Compliance</li>
-            <li> Data Backup & Recovery</li>
-            <li> Performance Optimization</li>
-            <li> Data Migration & Integration</li>
-            <li> Access Control & User Management</li>
-            <li> Data Analytics & Reporting</li>
-        </ul>
+        <div class="services">
+    
+            <div>
+                <h2>Web Development Consultant</h2>
+                <p>I specialize in guiding businesses, 
+                    individuals through  the process of creating,
+                    optimizing and maintaining high quality websites. I provide
+                    strategic, technical solutions and performance optimization 
+                    to en
+                    sure your website meets your goals.
+                </p> <br> <h3>Services include:</h3>
+                <ul>
+                    <li>Website Planning</li>
+                    <li>Design & Development</li>
+                    <li>Performance Optimization</li>
+                    <li>SEO Implementation</li>
+                </ul>
+                  
+            </div>
+    
+    
+    
+           
+            
         
+            <div>
+                <h2>Web Development</h2>
+                <p>I provide professional web development solutions to create fast,
+                    functional and visually appealing websites that align with
+                    your business goals.
+                </p><br>
+                <h3>Services include:</h3>
+                <ul>
+                    <li>Website Planning & Strategy</li>
+                    <li>Custom Web Design & Development</li>
+                    <li>Mobile Optimization</li>
+                    <li>SEO & Performance Enhancement</li>
+                    <li>E-commerce Solutions</li>
+                    <li>CMS Integration</li>
+                    <li>Ongoing Support & Maintenance</li>
+                  </ul>
+        
+            </div>
+        
+        
+        
+            <div>
+                <h2>Data Adminstration</h2>
+                <p>As a Data Administrator, I specialize in managing, securing
+                    and optimizing databases to ensure seamless data storage,
+                    access and integrity.
+                </p><br>
+                <h3>Services include:</h3>
+                <ul>
+                    <li> Database Design & Management</li>
+                    <li> Data Security & Compliance</li>
+                    <li> Data Backup & Recovery</li>
+                    <li> Performance Optimization</li>
+                    <li> Data Migration & Integration</li>
+                    <li> Access Control & User Management</li>
+                    <li> Data Analytics & Reporting</li>
+                </ul>
+                
+            </div>
+        
+            <div>
+                <h2>Digital Records Management</h2>
+                <p>I specialize in designing, implementing and optimizing digital
+                    records management systems to ensure secure, efficient and 
+                    compliant handling of information. My expertise covers 
+                    electronic document management, data security, automation and
+                    regulatory compliance. Whether it's structuring archives,
+                    streamlining access or enhancing digital workflows, 
+                    I help organizations transition to smarter, 
+                    tech-driven record-keeping solutions
+                </p><br>
+                <h3>Services include:</h3>
+                <ul>
+                    <li>Electronic Records Management(Organizing, storing and securing digital records.)</li>
+                    <li>Document Digitization & Automation.</li>
+                    <li>Records Organization & Retrieval.</li>
+                    <li>Compliance & Data Security.</li>
+                    <li>Cloud & On-Premise Storage Solutions.</li>
+                    <li>Database & Information Management (structuring and maintaining databases for effective record tracking.)</li>
+                    <li>Consultation & System Optimization.</li>
+                  </ul>
+            </div>
+    
+            <div>
+                <h2>Data Entry</h2>
+                <p>I specialize in ensuring the accurate and efficient entry,
+                     processing and management of data for various industries. 
+                     With a keen eye for detail, I focus on maintaining data
+                     integrity, organizing information, and delivering timely
+                     results. My expertise covers high-volume data processing,
+                     database management and creating automated workflows to 
+                     improve efficiency.
+                </p> <br>
+                <h3>Services include:</h3>
+                <ul>
+                    <li>Accurate Data Entry (inputting large volumes of data with precision and speed.)</li>
+                    <li>Data Cleaning & Validation (ensuring data consistency and accuracy.)</li>
+                    <li>Database Management (organizing and maintaining records in digital databases.)</li>
+                    <li>Document Scanning & Digitization (converting physical records to digital formats.)</li>
+                    <li>Data Processing & Reporting (analyzing and reporting on data trends.)</li>
+                    <li>Automation of Repetitive Tasks (using tools to streamline data entry processes.)</li>
+                    <li>Confidentiality & Data Security (maintaining confidentiality and secure handling of sensitive data.)</li>
+                </ul>
+            </div>
+        
+            
+        
+     </div>
     </div>
-
-    <div>
-        <h2>Digital Records Management</h2>
-        <p>I specialize in designing, implementing and optimizing digital
-            records management systems to ensure secure, efficient and 
-            compliant handling of information. My expertise covers 
-            electronic document management, data security, automation and
-            regulatory compliance. Whether it's structuring archives,
-            streamlining access or enhancing digital workflows, 
-            I help organizations transition to smarter, 
-            tech-driven record-keeping solutions
-        </p>
-        <ul>
-            <li>Electronic Records Management(Organizing, storing and securing digital records.)</li>
-            <li>Document Digitization & Automation.</li>
-            <li>Records Organization & Retrieval.</li>
-            <li>Compliance & Data Security.</li>
-            <li>Cloud & On-Premise Storage Solutions.</li>
-            <li>Database & Information Management (structuring and maintaining databases for effective record tracking.)</li>
-            <li>Consultation & System Optimization.</li>
-          </ul>
-    </div>
-
-    <div>
-        <h2>Web Development Consultant</h2>
-        <p>I specialize in guiding businesses, 
-            individuals through  the process of creating,
-            optimizing and maintaining high quality websites. I provide
-            strategic, technical solutions and performance optimization 
-            to ensure your website meets your goals.
-        </p>
-        <ul>
-            <li>Website Planning</li>
-            <li>Design & Development</li>
-            <li>Performance Optimization</li>
-            <li>SEO Implementation</li>
-        </ul>
-          
-    </div>
-
 </div>
 
 <!------------------Projects--------------->
-<div class="projects">
-    <h1> My Projects</h1>
-
-    <div>
-        <h3>Portfolio Website</h3>
-        <p>Key Features:Personal Introduction, Project showcases, 
-            Contact form, Responsive Design
-        </p>
-        <p>Technologies used:HTML, CSS , Javasript </p>
-        <img src="" alt="A screenshot of the website">
-        <a href="">See Full Project</a>
-    </div>
-
-    <div>
-        <h3>Data Entry Specialist</h3>
-        <p>Key Responsibilities: Accurate data entry, data validation, 
-            maintaining databases, organizing files, and generating reports.
-            Specializing in high-volume data processing and ensuring data 
-            consistency and accuracy across various platforms.</p>
-        <p>Technologies used: Microsoft Excel, Google Sheets, MS Access, 
-            Data Management Systems (DBMS), CRM software.</p>
-        <img src=" " alt="A screenshot of data entry work">
-    </div>
+<div id="projects">
+    <div class="projects">
+        <h1> My Projects</h1>
     
+        <div class="projectlist">
+            <div class="work">
+                <img src="images/excel.jpg" alt="">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Key Features:Personal Introduction, Project showcases, 
+                        Contact form, Responsive Design
+                    </p>
+                    <p>Technologies used:HTML, CSS , Javasript </p>
+                    <a href="">See Full Project</a>
 
-    <div>
-        <h3>E-commerce website clone</h3>
-        <p>Key Features:Product catalog, Checkout system,
-             Shopping Cart </p>
-        <p>Technologies used:Mysql, python, Javasript, HTML, CSS </p>
-        <img src="" alt="A screenshot of the website">
-        <a href="">See Full Project</a>
+                </div>
+               
+            </div>
+        
+            <div class="work">
+                <img src="images/excel.jpg" alt="">
+                <div class="layer">
+                    <h3>Data Entry Specialist</h3>
+                <p>Key Features: .</p>
+                <p>Technologies used: Microsoft Excel, Google Sheets, MS Access, 
+                    Data Management Systems (DBMS), CRM software.</p>
+                    <a href="">See Full Project</a>
+                </div>
+                
+            </div>
+            
+        
+            <div class="work">
+                <img src="images/excel.jpg" >
+                <div class="layer">
+                    <h3>E-commerce website clone</h3>
+                <p>Key Features:Product catalog, Checkout system,
+                     Shopping Cart </p>
+                <p>Technologies used:Mysql, python, Javasript, HTML, CSS </p>
+               <a href="">See Full Project</a>
+                </div>
+            </div>
+        
+            <div class="work">
+                <img src="images/youtube clone.png">
+                <div class="layer">
+                    <h3>Youtube Clone</h3>
+                <p>Key Features: Commenting, Like/Dislike, 
+                    video Viewers, Uploading
+                </p>
+                <p>Technologies used: Javasript, HTML , CSS</p>
+               <a href="">See Full Project</a>
+                </div>
+            </div>
+        </div>
+
+        <button > <!-- <a href=" <!- link to my github --></a>See More</button> 
     </div>
-
-    <div>
-        <h3>Youtube Clone</h3>
-        <p>Key Features: Commenting, Like/Dislike, 
-            video Viewers, Uploading
-        </p>
-        <p>Technologies used: Javasript, HTML , CSS</p>
-        <img src="" alt="A screenshot of the website">
-        <a href="">See Full Project</a>
-    </div>
-
-  
-
-    <button > <!-- <a href=" <!- link to my github --></a>See More</button> 
 </div>
 
 <!--------------Contact Section------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactleft">  <!--For the left column-->
+                <h1 class="subtitle">Contact Me</h1>
+                
+                <div class="socialicons">
+                  <a href="tel:+254727255011"><i class="fa-solid fa-phone"></i></a>
+                  <a href=" https://www.instagram.com/chebbie_chich?igsh=MXZ4eHh0bnI1dTZ0bA=="></i><i class="fa-brands fa-instagram"></i></a>
+                  <a href="mailto:jepichiisandra@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="https://wa.me/254727255011"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV </a>
 
-<div class="contact">
-    <div>
-        <!-- Social media  ig , mail , whatsapp , phone  -->
+            </div>
+
+            <div class="contactright">  <!--For the right column-->
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder=" Your Email" required>
+                    <textarea name="mesaage" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Send Message  </button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
     </div>
-
     <div class="copyright">
-        <p>&copy; 2025 Sandra Wandera</p>
-        <p>Made with <span>&#9829;</span> by Sandra Wandera</p>
+        <p>copyright &copy; 2025  Made with 
+             <span class="heart">&hearts;</span>
+            by Sandra Wandera</p>
     </div>
 </div>
+
+
+
 </body>
 </html>
