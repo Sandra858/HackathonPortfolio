@@ -126,6 +126,7 @@ nav ul li a:hover::after{
     box-shadow: 0 4px 8px rgba(10, 10, 10, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
+ 
 }
 .row:hover {
     transform: translateY(-10px); 
@@ -189,6 +190,7 @@ nav ul li a:hover::after{
         padding: 10px;
         margin: 0;
         min-height: 100vh;
+        display: flex;
     }
 
 
@@ -500,6 +502,9 @@ background:  #3E2723;
     .row:not(:last-child)::after {
         display: none;
     }
+    .row{
+        width: 100%;
+    }
 
     .sectionhead{
         font-size: 30px;
@@ -522,29 +527,22 @@ background:  #3E2723;
 
 
     /* Services offered */
-
-    #services{
-        align-items: center;
-        justify-content: center;
-        align-self: center;
-        margin-left: -30px;
-    }
-    .services{
-        margin-left:60px;
-    }
-    .services h2{   
-        font-size: 16px;
-        color: #ffd700;
-    }
-    #services h1{
-        font-size: 25px;
-    }
-
-    .services div ul li{
-        font-size:13px;
-
-    }
     
+    .services {
+        grid-template-columns: 1fr; 
+        width: 100%; 
+        padding:0 15px;
+    }
+
+    .services div {
+        width: 100%;
+        margin: 0 auto; 
+        text-align: center; 
+        margin: auto;
+    }
+
+   
+  
        
 
     /* Contact me  */
