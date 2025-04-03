@@ -1,20 +1,17 @@
-/* ----------General Styles----------- */
-* {
+/*--------General Body styling------*/
+
+body,html{
+    scroll-behavior: smooth;
+    background: #3E2723; 
+    color: #F5F5DC; 
+    line-height: 1.6;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-}
-
-/*--------General Body styling------*/
-html{
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #3E2723; 
-    color: #F5F5DC; 
-    line-height: 1.6;
+    overflow-x: hidden;
+    align-items: center;
 }
 
 /* --------Home Section--------------*/
@@ -25,10 +22,12 @@ body {
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: right;
+    
 }
 
 .container{
     padding: 10px 5%;
+    margin: auto;
 }
 
 /* -------Nav bar----*/
@@ -41,6 +40,7 @@ nav{
     left: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .logo{
@@ -52,8 +52,8 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    padding: 15px;
     padding-bottom: 0;
+    padding: 10px;
 }
 
 nav ul li a::after{
@@ -101,7 +101,7 @@ nav ul li a:hover::after{
     justify-content: center;
     text-align: center;
     padding: 50px;
-    min-height: 100vh;
+    
 }
 
 .aboutsection h1{
@@ -182,31 +182,31 @@ nav ul li a:hover::after{
 
     /*-------Services Offered----------- */
     #services{
-        background: #e29687;
+        background:  #3E2723;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        min-height: 100vh;
     }
 
 
-    .servicessection h1{
-        font-size: 32px;
-        margin-bottom: 40px;  
-        
-        
-    }
-
-    .services{
+       .services{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
         max-width: 1200px;
-        margin: auto;
+        margin:10px ;
+        align-items: center;
     }
 
     .services div{
-        background: #222;
+        background: rgb(88, 47, 39);
         padding: 20px;
         border-radius: 10px;
         color: #F5F5DC;
-        box-shadow: 0 4px 8px rgba(255. 0, 79,0.2);
+        box-shadow: 0 4px 8px rgba(62, 39, 35, 1);
         transition: transform 0.3s ease-out, box-shadow 0.35s;
         text-align: left;
     }
@@ -218,6 +218,7 @@ nav ul li a:hover::after{
 
     .services h2{
         margin-bottom: 10px;
+        color: #ffd700;
     }
 
     .services p{
@@ -226,13 +227,17 @@ nav ul li a:hover::after{
     }
     
 /*---------Projects--------------*/
-
 #projects{
     padding: 50px 0;
+    background: #5e3a33;
+}
+
+#project h1{
+    margin: auto;
 }
 .projectlist{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -241,26 +246,24 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    margin: 0;
 }
+
 .work img{
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition: transform 0.5s ease;
-}
-
-.work:hover img{
-    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 .layer{
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0 ,0, 0.5) , #14121380);
+    height:0;
+    background: linear-gradient(rgba(129, 87, 87, 0.6),#fa917e);
     border-radius: 10px;
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -268,79 +271,103 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    font-size: 12px;
+    transition: height 0.5s;
 }
 
 .layer h3{
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 20px;
-    color: wheat;
 }
+
 .layer a{
-    margin-top: 20px;
-    color:blue;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    width: fit-content;
-    border-radius: 20px;
-    text-align: center;
-
+    font-size: 16px;
+    color: #ffd700;
 }
 
-
+.work:hover img{
+    transform: scale(1.1);
+}
 .work:hover .layer{
-    opacity: 1;
-} 
+    height: 100%;
+}
+/* okay till jere */
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #262626;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffd700;
+    transition:background 0.5s ;
+}
+
+.btn:hover{
+    background: rgb(14, 13, 13);
+}
+
 
 /*----------Contact Fomr------------ */
+#contact{
+background:  #3E2723;
+        
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 .contactleft{
     flex-basis: 35%;
 }
+
 .contactright{
     flex-basis: 60%;
 }
 
 .contactleft p{
     margin-top: 30px;
-
 }
-
-
 .socialicons{
     margin-top: 30px;
 }
-
 .socialicons a{
     text-decoration: none;
     margin-right: 30px;
     padding: 10px;
-    font-size: 40px;
-    color: #cf2424;
+    color: #ffd700;
     display: inline-block;
-    transition: transform 0.5s;   /* Works hand in hand with the hover  */
+    transition: transform 0.5s;
+    font-size: 50px;
+
 }
 
 .socialicons a:hover{
- transform: translateY(-5px); /* MOveas the icons upwards */
-}
+    transform: translateY(-5px);
 
-.btn.btn2{
+}
+ .btn.btn2{
     display: inline-block;
-    background:#ff004f;
-    
-}
+    background: #80130f;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
 
-.btn.btn2:hover{
-    background: #3f3538;
+    
+ }
+ .btn.btn2:hover{
+    background: #c78c9e;
 }
 
 .contactright form{
     width: 100%;
 }
-form input, form textarea{
+ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
@@ -348,55 +375,47 @@ form input, form textarea{
     padding: 15px;
     margin: 15px 0;
     font-size: 18px;
-    color: #fff;
+    color: #ff004f;
     border-radius: 6px;
-}
+ }
 
-form .btn2{
-    padding: 14px 60px;
+ form .btn2{
+    padding: 14px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+ }
 
-}
+ /* Foooter */
 
-
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
+ footer {
     background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
+    color: #F5F5DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+   padding-top: 60px;  
+   margin-top: 30px;
 
 }
 
-.heart{
+.copyright p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.heart {
     color: red;
+    font-size: 16px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+/*----------------------------------------------------------------------------------------*/
 
 
 
@@ -404,29 +423,31 @@ form .btn2{
 
 @media only screen and (max-width: 768px) {
 
+    body{
+        align-items: center;
+    }
 /*--------------Homepage----------*/
 /* check on reduction of the image to show full face */
     #header{
         background-image: url(images/Phonebackground.png);
-        background-position:left;
+        background-position:-100px center;
         background-size: 200%;  
     }
 
     .hometext p{
         font-size: 18px;
-        margin: 40px;
         padding-top: 25%;   
     }
 
     .hometext h1{
         font-size: 24px;
-        margin: 40px;
+        margin-right: 20px; 
 
     }
 
     .hometext h3{
         font-size: 16px;
-        margin: 40px;
+        color: #ffd700;
     }
 
 
@@ -437,24 +458,136 @@ form .btn2{
     left: 0;
     width: 100%;
     z-index: 1000;
-    height:20px ;
-    margin: 10px;   
+    height:fit-content;
+    margin-left: 0;     
     padding: 5px;
+   
     }
-
     nav img{
         display: none;
     }
     nav ul li a{
-        font-size: 14px;
+        font-size: 12px;
         padding:2px; 
         position: center;   
         
     }
+
+   
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f; 
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+        margin: top 20px;
+    }
+    
+    nav ul li a:hover::after{
+        width: 90%;
+    }
+
+    
 
     /*-------About Page--------*/
     .row:not(:last-child)::after {
         display: none;
     }
 
+    .sectionhead{
+        font-size: 30px;
+    }
+    .row h2::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #ff004f; 
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+        margin: top 20px;
+    }
+    
+        .row h2:hover::after{
+            width: 100%;
+        }
+
+
+    /* Services offered */
+
+    #services{
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        margin-left: -30px;
+    }
+    .services{
+        margin-left:60px;
+    }
+    .services h2{   
+        font-size: 16px;
+        color: #ffd700;
+    }
+    #services h1{
+        font-size: 25px;
+    }
+
+    .services div ul li{
+        font-size:13px;
+
+    }
+    
+       
+
+    /* Contact me  */
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactleft, .contactright {
+        flex-basis: 100%;
+    }
+
+    .socialicons a {
+        font-size: 40px;
+        margin-right: 15px;
+    }
+
+    form input, form textarea {
+        font-size: 16px;
+        padding: 12px;
+        width: 80%;
+    }
+
+  
+      
+
+    /* --Fooooooooter---- */
+
+    footer {
+        background: #262626;
+        color: #F5F5DC;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .copyright p {
+        font-size: 12px;
+        margin: 0;
+        padding: 5px;
+    }
+    
+    .heart {
+        color: red;
+        font-size: 16px;
+    }
+    
 }

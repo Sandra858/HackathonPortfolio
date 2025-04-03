@@ -5,45 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/df2e8ea48d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/df2e8ea48d.js" crossorigin="anonymous"></script> <!--For the icons i've used-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> <!--For the 'poppins font'-->
 </head>
 <body>
 
 <!----------Home Section---------->
 <div id="header">
-<div class="container">
-    <!--Navigation Bar-->
-    <nav >
-        <img src="images/Logo.png" >
+    <div class="container">
+        <!--Navigation Bar-->
+        <nav >
+            <img src="images/Logo.png" >
 
-        <ul>
-            <li>
-                <a href="#">Home</a>
-                <a href="#">About Me</a>  <!-- intrests, education, skills, cv ,languages -->
-                <a href="#">Services </a>
-                <a href="#">Projects</a>
-                <a href="#">Contact Me</a>
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">About Me</a>  <!-- intrests, education, skills, cv ,languages -->
+                    <a href="#">Services </a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact Me</a>
+                </li>
+            </ul>
 
-        
-    </nav>
-    <div>
-        <!-- <img src="images/Image40.png"> -->
+            
+        </nav>
+    
+        <div class="hometext">
+            <p>Web Developer | <br> Database Adminstrator | <br> Records Manager |<br> Data Entry Specialist</p>
+            <h1>Sandra Wandera </h1>
+            <h3>Nairobi, Kenya</h3>
+        </div>
     </div>
-
-
-    <div class="hometext">
-        <p>Web Developer | <br> Database Adminstrator | <br> Records Manager |<br> Data Entry Specialist</p>
-        <h1>Sandra Wandera </h1>
-        <h3>Nairobi, Kenya</h3>
-    </div>
-</div>
     
 </div>
 
 <!-------------About section------------->
 <div class="aboutsection">
+   <div class="container">
     <h1 class="sectionhead">About Me</h1>
     <div class="about">
         <div class="row">
@@ -64,6 +62,7 @@
                 <li>Python</li>
                 <li>MySql</li>
                 <li>HTML CSS</li>
+                <li>JavaScript</li>
             </ul>
         </div>
 
@@ -95,19 +94,17 @@
                     websites!
                 </li>
             </ul>
+        </div>
 
     </div>
+   </div>
 
 </div>
-
-
     
 <!---------Services Section------------>
 <div id="services">
-    <div class="servicessection">
-
+    <div class="container">
         <h1>Services Offered</h1>
-    
         <div class="services">
     
             <div>
@@ -126,13 +123,7 @@
                     <li>SEO Implementation</li>
                 </ul>
                   
-            </div>
-    
-    
-    
-           
-            
-        
+            </div>        
             <div>
                 <h2>Web Development</h2>
                 <p>I provide professional web development solutions to create fast,
@@ -151,9 +142,6 @@
                   </ul>
         
             </div>
-        
-        
-        
             <div>
                 <h2>Data Adminstration</h2>
                 <p>As a Data Administrator, I specialize in managing, securing
@@ -172,7 +160,6 @@
                 </ul>
                 
             </div>
-        
             <div>
                 <h2>Digital Records Management</h2>
                 <p>I specialize in designing, implementing and optimizing digital
@@ -195,7 +182,6 @@
                     <li>Consultation & System Optimization.</li>
                   </ul>
             </div>
-    
             <div>
                 <h2>Data Entry</h2>
                 <p>I specialize in ensuring the accurate and efficient entry,
@@ -217,78 +203,83 @@
                     <li>Confidentiality & Data Security (maintaining confidentiality and secure handling of sensitive data.)</li>
                 </ul>
             </div>
-        
-            
-        
-     </div>
-    </div>
+        </div>
+    </div>  
 </div>
 
 <!------------------Projects--------------->
 <div id="projects">
-    <div class="projects">
+    <div class="container">
         <h1> My Projects</h1>
-    
         <div class="projectlist">
             <div class="work">
-                <img src="images/excel.jpg" alt="">
+                <img src="images/portfolio.png" alt="">
                 <div class="layer">
                     <h3>Portfolio Website</h3>
-                    <p>Key Features:Personal Introduction, Project showcases, 
-                        Contact form, Responsive Design
+                    <p>Key Features:Personal Introduction,<br>
+                         Project showcases, 
+                        Contact form, <br>
+                         Responsive Design
                     </p>
-                    <p>Technologies used:HTML, CSS , Javasript </p>
+                    <p>Technologies used:HTML, CSS ,<br>
+                         Javasript </p>
                     <a href="">See Full Project</a>
 
                 </div>
-               
             </div>
-        
+
             <div class="work">
-                <img src="images/excel.jpg" alt="">
+                <img src="images/data entry.png" alt="">
                 <div class="layer">
                     <h3>Data Entry Specialist</h3>
-                <p>Key Features: .</p>
-                <p>Technologies used: Microsoft Excel, Google Sheets, MS Access, 
-                    Data Management Systems (DBMS), CRM software.</p>
+                <p>Key Features: Visual representation, <br>
+                    Filter , sorting.</p>
+                <p>Technologies used: Microsoft Excel, <br>
+                     Google Sheets, MS Access, <br>
+                    Data Management Systems (DBMS), <br>
+                     CRM software.</p>
                     <a href="">See Full Project</a>
                 </div>
                 
             </div>
             
-        
             <div class="work">
-                <img src="images/excel.jpg" >
+                <img src="images/eccomrce.png" >
                 <div class="layer">
                     <h3>E-commerce website clone</h3>
-                <p>Key Features:Product catalog, Checkout system,
+                <p>Key Features:Product catalog,<br>
+                     Checkout system,
                      Shopping Cart </p>
-                <p>Technologies used:Mysql, python, Javasript, HTML, CSS </p>
+                <p>Technologies used:Mysql,<br>
+                     python, Javasript, <br>
+                      HTML, CSS </p>
                <a href="">See Full Project</a>
                 </div>
             </div>
-        
+
             <div class="work">
-                <img src="images/youtube clone.png">
+                <img src="images/youtubeclone.png">
                 <div class="layer">
                     <h3>Youtube Clone</h3>
-                <p>Key Features: Commenting, Like/Dislike, 
+                <p>Key Features: Commenting, Like/Dislike, <br>
                     video Viewers, Uploading
                 </p>
-                <p>Technologies used: Javasript, HTML , CSS</p>
+                <p>Technologies used: <br>Javasript,<br>
+                     HTML , CSS</p>
                <a href="">See Full Project</a>
                 </div>
             </div>
         </div>
 
-        <button > <!-- <a href=" <!- link to my github --></a>See More</button> 
+        <a href="#" class="btn">See More Projects</a>
     </div>
 </div>
+
 
 <!--------------Contact Section------------>
 <div id="contact">
     <div class="container">
-        <div class="row">
+        <div class="contact">
             <div class="contactleft">  <!--For the left column-->
                 <h1 class="subtitle">Contact Me</h1>
                 
@@ -314,12 +305,16 @@
             </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>copyright &copy; 2025  Made with 
-             <span class="heart">&hearts;</span>
-            by Sandra Wandera</p>
-    </div>
+
 </div>
+
+<!-- footer -->
+<footer class="copyright">
+    <p>copyright &copy; 2025 <br> Made with 
+        <span class="heart">&hearts;</span>
+        by Sandra Wandera</p>
+    
+</footer>
 
 
 
