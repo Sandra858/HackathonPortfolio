@@ -95,7 +95,7 @@ nav ul li a:hover::after{
 }
 
 /* --------About Section------------ */
-.aboutsection{
+#aboutsection{
     background-color: #5e3a33;
     align-items: center;
     justify-content: center;
@@ -104,7 +104,7 @@ nav ul li a:hover::after{
     
 }
 
-.aboutsection h1{
+#aboutsection h1{
     align-items: center;
     margin: 20px 10px;
 }
@@ -412,6 +412,10 @@ background:  #3E2723;
 .heart {
     color: red;
     font-size: 16px;
+}
+
+#msg{
+    color: #ffd700;
 }
 
  
