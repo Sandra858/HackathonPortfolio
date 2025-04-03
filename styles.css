@@ -507,37 +507,28 @@ background:  #3E2723;
     .row:not(:last-child)::after {
         display: none;
     }
-    .row{
+    .row {
         width: 100%;
     }
-
-    .sectionhead{
+    .sectionhead {
         font-size: 30px;
     }
-    .row h2::after{
-        content: '';
-        width: 0;
-        height: 2px;
-        background: #ff004f; 
-        position: absolute;
-        left: 0;
-        bottom: -6px;
-        transition: 0.5s;
-        margin: top 20px;
+    .about {
+        grid-template-columns: 1fr; /* Stack items in one column */
     }
-    
-        .row h2:hover::after{
-            width: 100%;
-        }
+  
+    .row h2:hover::after{
+      width: 100%;
+     }
 
-        .services {
-            grid-template-columns: 1fr; /* Single column for very small screens */
-            gap: 10px;
-        }
+    .services {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+        gap: 10px;
+     }
     
-        .services div {
-            padding: 10px; /* Smaller padding on smaller screens */
-        }
+    .services div {
+        padding: 10px; /* Smaller padding on smaller screens */
+    }
 
 
     
