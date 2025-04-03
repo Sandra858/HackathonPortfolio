@@ -182,8 +182,8 @@ nav ul li a:hover::after{
 
 
     /*-------Services Offered----------- */
-    #services{
-        background:  #3E2723;
+    #services {
+        background: #3E2723;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -192,18 +192,17 @@ nav ul li a:hover::after{
         min-height: 100vh;
         display: flex;
     }
-
-
-       .services{
+    
+    .services {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
         max-width: 1200px;
-        margin:10px ;
+        margin: 10px;
         align-items: center;
     }
-
-    .services div{
+    
+    .services div {
         background: rgb(88, 47, 39);
         padding: 20px;
         border-radius: 10px;
@@ -212,7 +211,13 @@ nav ul li a:hover::after{
         transition: transform 0.3s ease-out, box-shadow 0.35s;
         text-align: left;
     }
-
+    
+    .services div:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(209, 202, 204, 0.4);
+    }
+    
+ 
     .services div:hover {
         transform: translateY(-10px);
         box-shadow: 0 12px 24px rgba(209, 202, 204, 0.4);
@@ -525,21 +530,18 @@ background:  #3E2723;
             width: 100%;
         }
 
-
-    /* Services offered */
+        .services {
+            grid-template-columns: 1fr; /* Single column for very small screens */
+            gap: 10px;
+        }
     
-    .services {
-        grid-template-columns: 1fr; 
-        width: 100%; 
-        padding:0 15px;
-    }
+        .services div {
+            padding: 10px; /* Smaller padding on smaller screens */
+        }
 
-    .services div {
-        width: 100%;
-        margin: 0 auto; 
-        text-align: center; 
-        margin: auto;
-    }
+
+    
+
 
    
   
